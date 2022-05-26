@@ -7,25 +7,25 @@
     <title>W3.CSS Template</title>
     <link rel="icon" href="img/icon.ico">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
 </head>
 <body>
     <!--Header-->
     <div id="header">
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#TheBand">Band</a></li>
-                <li><a href="#TourDates">Tour</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#">More <i class="more-icon ti-arrow-circle-down"></i></a>
-                 <ul class="subnav">
-                     <li><a href="#">Merchandise</a></li>
-                     <li><a href="#">Extras</a></li>
-                     <li><a href="#">Media</a></li>
-                 </ul>
-                </li>
-            </ul>
-            <a href="#"><i class="search-icon ti-search"></i></a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#TheBand">Band</a></li>
+            <li><a href="#TourDates">Tour</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#">More <i class="more-icon ti-arrow-circle-down"></i></a>
+             <ul class="subnav">
+                 <li><a href="#">Merchandise</a></li>
+                 <li><a href="#">Extras</a></li>
+                 <li><a href="#">Media</a></li>
+             </ul>
+            </li>
+        </ul>
+        <a href="#"><i class="search-icon ti-search"></i></a>
     </div>
     <!--Slides-->
     <div id="slides">
@@ -35,12 +35,14 @@
         </div>
 
     </div>
+    
     <!--Content-->
     <div id="content">
         <div id="TheBand">
             <h1>THE BAND</h1>
             <h2>We love music</h2>
             <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
             <div class="Name">
                 <ul>
                     <div class="text-Name">
@@ -49,19 +51,20 @@
                         <li>Name</li>
                     </div>
                     <div class="img-Name">
-                        <li><img src="/img/bandmember.jpg" alt=""></li>
-                        <li><img src="/img/bandmember.jpg" alt=""></li>
-                        <li><img src="/img/bandmember.jpg" alt=""></li>
+                        <li><img src="./img/bandmember.jpg" alt=""></li>
+                        <li><img src="./img/bandmember.jpg" alt=""></li>
+                        <li><img src="./img/bandmember.jpg" alt=""></li>
                     </div>      
                 </ul>
             </div>
-           
         </div>
+    </div>
 
-        <div id="TourDates">
-            <div class="content-TourDates">
-                <h1>TOUR DATES</h1>
-                <h2>Remember to book your tickets!</h2>
+    <!--Tour Section -->
+    <div id="TourDates">
+        <div class="tour-dates-tickets">
+            <h1>TOUR DATES</h1>
+            <h2>Remember to book your tickets!</h2>
             <div class="tour-tickets">
                 <ul>
                     <li>September <span class="sold-out">Sold out</span></li>
@@ -72,73 +75,70 @@
             <div class="tour-img">
                 <ul class="list-img">
                     <li class="New-York">
-                        <img src="/img/newyork.jpg" alt="New-York">
+                        <img src="./img/newyork.jpg" alt="New-York">
                         <h1>New York</h1>
                         <h2>Fri 27 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                         <button class="Buy-Tickets">Buy Tickets</button>
                     </li>
                     <li class="Paris">
-                        <img src="/img/paris.jpg" alt="Paris">
+                        <img src="./img/paris.jpg" alt="Paris">
                         <h1>Paris</h1>
                         <h2>Sat 28 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                         <button class="Buy-Tickets">Buy Tickets</button>
-                        
+
                     </li>
                     <li class="San-Francisco">
-                        <img src="/img/sanfran.jpg" alt="San Francisco">
+                        <img src="./img/sanfran.jpg" alt="San Francisco">
                         <h1>San Francisco</h1>
                         <h2>Sun 29 Nov 2016</h2>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
                         <button class="Buy-Tickets">Buy Tickets</button>
-                        
+
                     </li>
                 </ul>
             </div>
-            </div>
+        </div>
+    </div>
+            
+    <!-- Contact Section -->
+    <div id="Contact">
+        <h1 class="contact-h1">Contact</h1>
+        <h2 class="contact-h2">Fan? Drop a note !</h2>
+        <div class="row Inform">
+                <div class="inf col col-2">
+                    <p><i class="icon ti-location-pin"></i>Chicago, US</p>
+                    <p><i class="icon ti-mobile"></i>Phone: +00 151515</p>
+                    <p><i class="icon ti-email"></i>Email: mail@mail.com</p>
+                </div>
+                <div class="col col-2">
+                    <input class="Name col col-2" type="text" name="" placeholder="Name" id="">
+                    <input class="Email col col-2" type="text" name="" placeholder="Email" id="">
+                    <input class="row mes" type="text" name="" placeholder="Message" id="">
+                </div>
+                <button class="submit">SEND</button>
+        </div>
+    </div>
+
+    <!-- Map image -->
+    <img src="./img/map.jpg" class="map-img">
+
+    <!--Footer-->
+    <footer id="root">
+        <div>
+            <i class="icon ti-facebook"></i>
+            <i class="icon ti-instagram"></i>
+            <i class="icon ti-dropbox-alt"></i>
+            <i class="icon ti-pinterest"></i>
+            <i class="icon ti-twitter"></i>
+            <i class="icon ti-linkedin"></i>
             
         </div>
-
-        <div id="Contact">
-            <h1 class="contact-h1">Contact</h1>
-            <h2 class="contact-h2">Fan? Drop a note !</h2>
-
-            <div class="row Inform">
-                    <div class="inf col col-2">
-                        <p><i class="icon ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="icon ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="icon ti-email"></i>Email: mail@mail.com</p>
-                    </div>
-                    <div class="col col-2">
-                        <input class="Name col col-2" type="text" name="" placeholder="Name" id="">
-                        <input class="Email col col-2" type="text" name="" placeholder="Email" id="">
-                        <input class="row mes" type="text" name="" placeholder="Message" id="">
-                    </div>
-                    <button class="submit">SEND</button>
-            </div>
-
+        <div class="text">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </div>
+    </footer>
 
-    </div>
-    <!--Root-->
-    <div id="root">
-        <div class="inf-root">
-            <div>
-                <i class="icon ti-facebook"></i>
-                <i class="icon ti-instagram"></i>
-                <i class="icon ti-dropbox-alt"></i>
-                <i class="icon ti-pinterest"></i>
-                <i class="icon ti-twitter"></i>
-                <i class="icon ti-linkedin"></i>
-                
-            </div>
-            <div class="text">
-                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
-            </div>
-        </div>
-        
-
-    </div>
 </body>
 </html>

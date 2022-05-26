@@ -17,10 +17,13 @@ html{
     height: 46px;
     background-color: #000;
     position: fixed ;
+    z-index: 1;
     top:0;
     left:0;
     right:0;
-
+    box-shadow: 
+        0 2px 5px 0 rgb(0 0 0 / 16%), 
+        0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 #header .nav{
@@ -36,11 +39,16 @@ html{
     display: inline-block;
     line-height: 22.5px;
     padding: 12px 24px;
+    font-size: 16px;
     color:#fff;
     text-decoration: none;
 }
 .nav >li >a{
     text-transform: uppercase;
+}
+
+.nav >li >a >i {
+    font-size: 13px;
 }
 
 .nav >li:hover >a{
@@ -49,18 +57,18 @@ html{
 }
 
 #header .subnav{
-    
     display: none;
 }
 
 .nav li:hover .subnav{
-    
     display: inline-block !important;
     background-color: #fff;
     position: absolute;
     margin:46px 0 0 0;
     left:0;
-    box-shadow: 2px 4px 4px 4px #ccc;
+    box-shadow: 
+        0 4px 10px 0 rgb(0 0 0 / 20%), 
+        0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .subnav li:hover{
@@ -97,7 +105,7 @@ html{
 /* <!--Slides--> */
 
 #slides{
-    background: url('/img/chicago.jpg') top center /cover no-repeat;
+    background: url('./img/chicago.jpg') top center /cover no-repeat;
     padding-top: 50%;
     margin-top: 46px;
     
@@ -123,15 +131,18 @@ html{
 
 /* <!--Content--> */
 
+#content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* The Band */
 
 #content #TheBand{
     display: block;
     padding: 64px 16px;
-    margin-left: 28%;
-    margin-right: 28%;
-    min-height: 550px;
 }
 
 #content >#TheBand >h1{
@@ -139,7 +150,6 @@ html{
     letter-spacing: 4px;
     text-align: center;
     font-size: 30px;
-    opacity: 0.78;
     margin:10px 0;
     line-height: 45px;
 }
@@ -148,7 +158,8 @@ html{
     font-weight: lighter;
     font-style: italic;
     font-size: 15px;
-    color:darkgrey;
+    line-height: 1.5;
+    color:rgb(114, 112, 112);
     margin: 15px 0;
     text-align: center;
 }
@@ -157,13 +168,12 @@ html{
     font-size: 15px;
     margin: 15px 0;
     text-align: justify;
-    padding: 0 16px;
     line-height: 1.5;
 }
 
 #TheBand .Name{
-    padding: 32px 16px;
-    display: inline-block
+    padding: 32px 0;
+    display: inline-block;
     
 }
 
@@ -199,21 +209,20 @@ html{
 }
 
 /* Tour Dates */
-#content #TourDates{
+#TourDates{
     background-color:#000;
     width:100%;
-    /* height: 700px; */
+    color: #FFF;
     box-sizing: border-box;
+}
+
+#TourDates .tour-dates-tickets {
     padding: 64px 16px;
-    
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#content .content-TourDates{
-    margin-left: 29%;
-    margin-right: 29%;;
-}
-
-#content >#TourDates h1{
+#TourDates h1{
     text-align: center;
     margin: 10px 0;
     color: #fff;
@@ -223,15 +232,17 @@ html{
 
 }
 
-#content >#TourDates h2{
+#TourDates h2{
     text-align: center;
     font-style: italic;
     color:#ccc;
     font-size: 15px;
-    margin: 15px 0 32px;
+    margin: 15px 0 35px 0;
     opacity: 0.6;
     
 }
+
+
 
 /* Tour tickets */
 
@@ -239,7 +250,6 @@ html{
     background-color: #fff;
     font-size: 15px;
     display: block;
-
 }
 
 .tour-tickets li{
@@ -278,17 +288,20 @@ html{
 }
 
 .tour-img .list-img{
-    margin-left: -8px;
-    margin-right: -32px;
+    text-align: center;
 }
 
 .tour-img li{
     display: inline-block;
-    margin: 0 8px;
+    /* margin: 0 8px; */
     list-style: none;
-    width: 30%;
+    width: 31%;
     background-color: #fff;
 }
+
+.New-York { margin: 0 8px 0 0; }
+.Paris { margin: 0 14px; }
+.San-Francisco { margin: 0 0 0 8px; }
 
 .tour-img img{
     vertical-align: middle;
@@ -344,6 +357,7 @@ html{
     cursor: pointer;
 }
 
+
 /* Contact */
 
 .row{
@@ -360,14 +374,13 @@ html{
     
 }
 
-#content #Contact{
+#Contact{
     padding: 64px 16px;
-    margin-left: 28%;
-    margin-right: 28%;
-
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#content .contact-h1{
+.contact-h1{
     text-align: center;
     font-weight: lighter;
     text-transform: uppercase;
@@ -378,10 +391,10 @@ html{
 
 }
 
-#content .contact-h2{
+.contact-h2{
     color:#000;
     font-style: italic;
-    opacity: 0.8;
+    opacity: 0.6;
     text-align: center;
     margin: 15px 0;
     font-weight: lighter;
@@ -398,13 +411,20 @@ html{
 
 #Contact .inf{
     margin-bottom: 16px;
+    line-height: 1.5;
 }
 
 #Contact .icon{
     display: inline-block;
     color: #000;
     padding:0 18px 0 0 !important;
+    font-size: 17px;
     line-height: 1.5;
+}
+
+input {
+    overflow: visible;
+    border: 1px solid #CCC;
 }
 
 #Contact .mes{
@@ -416,8 +436,10 @@ html{
 #Contact .submit{
     margin: 0 8px;
     float:right;
-    padding: 8px 16px;
+    padding: 10px 16px;
     background-color: #000;
+    text-align: center;
+    border: none;
     color: #fff;
     cursor: pointer;
 }
@@ -436,22 +458,26 @@ html{
 
 
 
+/* Map img */
+.map-img {
+    width: 100%;
+    filter: grayscale(50%);
+    height: auto;
+    vertical-align: middle;
+}
+
 
 
 
 /* <!--Root-->  */
 
 #root{
-    background: url(/img/map.jpg) top center /cover no-repeat;
-    width: 100%;
-    padding-top: 50%;;
-}
-
-#root .inf-root{
-    padding: 64px 0;
+    padding: 64px 16px;
+    background-color: #F1F1F1;
+    color: #000;
     text-align: center;
-    background-color: #fff;
     display: block;
+    opacity: 0.60;
 }
 
 #root .inf-root .icon{
@@ -464,6 +490,14 @@ html{
     text-align: center;
     font-size: 15px;
     line-height: 22.5px;
-
+    margin: 15px 0;
 }
 
+footer a {
+    color: black;
+}
+
+footer i{ font-size: 21px; }
+footer i:hover {
+    opacity: 0.50;
+}
