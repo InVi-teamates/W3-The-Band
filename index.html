@@ -29,11 +29,27 @@
     </div>
     <!--Slides-->
     <div id="slides">
-        <div class="text-slide">
-            <h1>Chicago</h1>
-            <h2>Thank you, Chicago - A night we won't forget.</h2>
+        <div class="text-slide" id="ts-1">
+            <img src="./img/chicago.jpg">
+            <div class="slide-txt">
+                <h1>Chicago</h1>
+                <h2>Thank you, Chicago - A night we won't forget.</h2>
+            </div>
         </div>
-
+        <div class="text-slide" id="ts-2">
+            <img src="./img/la.jpg">
+            <div class="slide-txt">
+                <h1>Los Angeles</h1>
+                <h2>We had the best time playing at Venice Beach!</h2>
+            </div>
+        </div>
+        <div class="text-slide" id="ts-3">
+            <img src="./img/ny.jpg">
+            <div class="slide-txt">
+                <h1>New York</h1>
+                <h2>The atmosphere in New York is lorem ipusm.</h2>
+            </div>
+        </div>
     </div>
     
     <!--Content-->
@@ -140,5 +156,25 @@
         </div>
     </footer>
 
+    
+    <!-- Slides java script -->
+    <script>
+        var myIndex = 0;
+        slides();
+
+        function slides() {
+            var i;
+            var x = document.getElementsByClassName("text-slide");      // array of all slides
+            for(i = 0; i < x.length; i++)
+            {
+                x[i].style.display="none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(slides, 3000)  // change every 3 seconds
+        }
+    </script>
+    
 </body>
 </html>

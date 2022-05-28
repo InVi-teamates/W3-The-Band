@@ -104,28 +104,35 @@ html{
 
 /* <!--Slides--> */
 
-#slides{
-    background: url('./img/chicago.jpg') top center /cover no-repeat;
-    padding-top: 50%;
-    margin-top: 46px;
-    
+#slides img{
+    width: 100%;
+    vertical-align: middle;
 }
 
 #slides .text-slide{
-    color:#fff;
-    bottom: 0;
-    width:100%;
+    position: relative;
     text-align: center;
-    padding-bottom: 46px;
+    margin-top: 46px;
 }
 
-#slides >.text-slide >h1{
+#slides .slide-txt {
+    position: absolute;
+    color: #fff;
+    padding: 32px 0;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}
+
+#slides >.text-slide >.slide-txt >h1{
+    margin: 10px 0;
     font-weight: lighter;
     font-size:large;
 }
 
-#slides >.text-slide >h2 {
+#slides >.text-slide >.slide-txt >h2 {
     font-size: medium;
+    margin: 15px 0;
 }
 
 
